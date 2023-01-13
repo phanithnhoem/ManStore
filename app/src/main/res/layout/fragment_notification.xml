@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NotificationFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/primaryColor" >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:padding="8dp"
+            android:src="@drawable/m_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Notifications"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- Notification One -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/my_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="Big Promotions !!!"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblTitleOne"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="DEC 31, 2022 01:35PM"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/lblContentOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgOne"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreOne"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Belt color signifies rank, or proficiency. The small colored bands across the end of the belt indicate the levels within each color. Students have to pass practical and theory tests to progress to the next rank. A serious student can reach black belt in two or three years." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor" />
+            </RelativeLayout>
+
+            <!-- Notification Two -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgTwo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/adidas_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgTwo"
+                    android:text="Announce a New Product"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JAN 01, 2023 12:00PM"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/imgTwo"
+                    android:layout_below="@id/lblTitleTwo"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/lblContentTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgTwo"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreTwo"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Belt color signifies rank, or proficiency. The small colored bands across the end of the belt indicate the levels within each color. Students have to pass practical and theory tests to progress to the next rank. A serious student can reach black belt in two or three years." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <!-- Notification Three -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgThree"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rolex_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgThree"
+                    android:text="Get 20% off EVERYTHING"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEC 31, 2022 01:35PM"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/imgThree"
+                    android:layout_below="@id/lblTitleThree"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/lblContentThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgThree"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreThree"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Rolex is a successful watch company due to its effective promotion activities. The company focuses on psychological marketing techniques mainly through branding. Rolex has created a reputation associated with excellence, class, and elegance. The brand represents high quality lifestyle and a sense of achievement and success. Rolex marketing strategies focuses on a specific market and concentrates on establishing a quality image." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <!-- Notification One -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/my_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="Big Promotions !!!"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblTitleOne"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="DEC 31, 2022 01:35PM"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/lblContentOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgOne"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreOne"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Belt color signifies rank, or proficiency. The small colored bands across the end of the belt indicate the levels within each color. Students have to pass practical and theory tests to progress to the next rank. A serious student can reach black belt in two or three years." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <!-- Notification One -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/my_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="Big Promotions !!!"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEC 31, 2022 01:35PM"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:layout_below="@id/lblTitleOne"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/lblContentOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgOne"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreOne"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Belt color signifies rank, or proficiency. The small colored bands across the end of the belt indicate the levels within each color. Students have to pass practical and theory tests to progress to the next rank. A serious student can reach black belt in two or three years." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <!-- Notification One -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/my_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="Big Promotions !!!"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEC 31, 2022 01:35PM"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:layout_below="@id/lblTitleOne"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/lblContentOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgOne"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreOne"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Belt color signifies rank, or proficiency. The small colored bands across the end of the belt indicate the levels within each color. Students have to pass practical and theory tests to progress to the next rank. A serious student can reach black belt in two or three years." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <!-- Notification One -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/my_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="Big Promotions !!!"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEC 31, 2022 01:35PM"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:layout_below="@id/lblTitleOne"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/lblContentOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgOne"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreOne"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Belt color signifies rank, or proficiency. The small colored bands across the end of the belt indicate the levels within each color. Students have to pass practical and theory tests to progress to the next rank. A serious student can reach black belt in two or three years." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+            <!-- Notification One -->
+            <RelativeLayout
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_back_white10_20" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgOne"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/my_logo" />
+
+                <TextView
+                    android:id="@+id/lblTitleOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:text="Big Promotions !!!"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEC 31, 2022 01:35PM"
+                    android:textSize="10sp"
+                    android:layout_toRightOf="@id/imgOne"
+                    android:layout_below="@id/lblTitleOne"
+                    android:layout_marginStart="8dp" />
+
+                <TextView
+                    android:id="@+id/lblContentOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgOne"
+                    android:layout_marginTop="8dp"
+                    android:layout_toLeftOf="@id/lblSeeMoreOne"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="Belt color signifies rank, or proficiency. The small colored bands across the end of the belt indicate the levels within each color. Students have to pass practical and theory tests to progress to the next rank. A serious student can reach black belt in two or three years." />
+
+                <TextView
+                    android:id="@+id/lblSeeMoreOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="See More"
+                    android:textColor="@color/primaryColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
